@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "ShabnamMedium";
+    src: url('../../../public/fonts/shabnam/Shabnam-Bold.woff2')
+    format("woff2") 
+}
