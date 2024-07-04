@@ -28,12 +28,12 @@ const Form = () => {
     }
     
     if(phone && phone.length !== 11){
-      showSwal("شماره تلفن باید 11 رقم باشد.", "warning", "فهمیدم");
+      showSwal("شماره تلفن باید 11 رقم باشد.", "error", "فهمیدم");
     }
 
 
     if(email && !email.includes("@")){
-      showSwal("لطفا ایمیل خود را به درستی وارد نمایید.", "warning", "فهمیدم");
+      showSwal("لطفا ایمیل خود را به درستی وارد نمایید.", "error", "فهمیدم");
     }
 
     const res = await fetch("/api/contact", {
