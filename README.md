@@ -1,8 +1,3 @@
-# [NextJS Tailwind Resume Page](http://demos.creative-tim.com/nextjs-tailwind-resume-page?ref=readme-ntrp) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https://www.creative-tim.com/product/nextjs-tailwind-resume-page&text=Check%20Material%20Tailwind%202%20Template%20made%20by%20@CreativeTim%20#webdesign%20#template%20#materialdesign%20#react%20https://www.creative-tim.com/product/nextjs-tailwind-resume-page)
-
-![version](https://img.shields.io/badge/version-1.0.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/nextjs-tailwind-resume-page.svg)](https://github.com/creativetimofficial/nextjs-tailwind-resume-page/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/nextjs-tailwind-resume-page.svg)](https://github.com/creativetimofficial/nextjs-tailwind-resume-page/issues?q=is%3Aissue+is%3Aclosed)
-
-![Image](https://s3.amazonaws.com/creativetim_bucket/products/748/original/material-tailwind-react-resume-template-thumbnail.jpg)
 
 Introducing Tailwind Resume Page, a professional and visually appealing resume web page template crafted using Tailwind CSS and Material Tailwind.
 
@@ -35,7 +30,6 @@ At present, we officially aim to support the last two versions of the following 
 ## Resources
 
 - [Live Preview](http://localhost:3000/en)
--
 
 ## Technical Support or Questions
 
