@@ -31,6 +31,11 @@ const Form = () => {
       showSwal("شماره تلفن باید 11 رقم باشد.", "warning", "فهمیدم");
     }
 
+
+    if(email && !email.includes("@")){
+      showSwal("لطفا ایمیل خود را به درستی وارد نمایید.", "warning", "فهمیدم");
+    }
+
     const res = await fetch("/api/contact", {
       method: "POST",
       headers: {
@@ -48,6 +53,7 @@ const Form = () => {
     if(res.status === 422){
       showSwal("لطفا تمام فیلد ها را  با دقت پر نمایید.", "warning", "فهمیدم");
     }
+
   };
 
   return (
