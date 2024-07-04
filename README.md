@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> b4c5ed48779ea5ac0dc39e88faab302d4b87b93a
 
 Introducing Tailwind Resume Page, a professional and visually appealing resume web page template crafted using Tailwind CSS and Material Tailwind.
 
@@ -31,7 +34,10 @@ At present, we officially aim to support the last two versions of the following 
 ## Resources
 
 - [Live Preview](http://localhost:3000/en)
+<<<<<<< HEAD
 
+=======
+>>>>>>> b4c5ed48779ea5ac0dc39e88faab302d4b87b93a
 
 ## Technical Support or Questions
 
