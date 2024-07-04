@@ -23,9 +23,7 @@ const Form = () => {
       phone,
     };
 
-    if(!email || !name || !message || !phone){
-      showSwal("لطفا تمام فیلد ها را پر نمایید.", "warning", "فهمیدم");
-    }
+    
     
     if(phone && phone.length !== 11){
       showSwal("شماره تلفن باید 11 رقم باشد.", "error", "فهمیدم");
@@ -41,9 +39,9 @@ const Form = () => {
       body: JSON.stringify(items),
     });
     if(res.status === 422){
-      showSwal("لطفا تمام فیلد ها را  با دقت پر نمایید.", "warning", "فهمیدم");
+      showSwal("آدرس ایمیل یا شماره همراه صحیح نمی باشد.", "warning", "فهمیدم");
     } if(res.status === 400){
-      showSwal("لطفا آدرس ایمیل صحیح را وارد نمایید.", "warning", "فهمیدم");
+      showSwal("لطفا تمام فیلد ها را  با دقت پر نمایید.", "warning", "فهمیدم");
     }
     if (res.status === 201) {
       showSwal("در اسرع وقت با شما تماس خواهیم گرفت.", "success", "فهمیدم");
