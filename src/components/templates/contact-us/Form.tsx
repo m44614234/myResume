@@ -32,10 +32,7 @@ const Form = () => {
     }
 
 
-    if(email && !email.includes("@")){
-      showSwal("لطفا ایمیل خود را به درستی وارد نمایید.", "error", "فهمیدم");
-    }
-
+   
     const res = await fetch("/api/contact", {
       method: "POST",
       headers: {
@@ -52,6 +49,8 @@ const Form = () => {
     }
     if(res.status === 422){
       showSwal("لطفا تمام فیلد ها را  با دقت پر نمایید.", "warning", "فهمیدم");
+    } if(res.status === 400){
+      showSwal("لطفا آدرس ایمیل صحیح را وارد نمایید.", "warning", "فهمیدم");
     }
 
   };

@@ -12,9 +12,9 @@ export async function POST(req: Request, res: Response) {
     if(phone && phone.length !== 11){
       return Response.json({ message: "Phone number is not valid" }, { status: 422 });
     }
-    
+
     if(email && !email.includes("@")){
-      return Response.json({ message: "Email is not valid" }, { status: 422 });
+      return Response.json({ message: "Email is not valid" }, { status: 400 });
     }
 
   const contact =  await ContactModel.create({ email, name, message, phone });
