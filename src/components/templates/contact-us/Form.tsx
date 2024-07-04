@@ -43,7 +43,7 @@ const Form = () => {
     }else if(res.status === 400){
       showSwal("لطفا تمام فیلد ها را  با دقت پر نمایید.", "warning", "فهمیدم");
     }
-    elseif (res.status === 201) {
+    else if (res.status === 201) {
       showSwal("در اسرع وقت با شما تماس خواهیم گرفت.", "success", "فهمیدم");
       setEmail("");
       setName("");
