@@ -10,24 +10,12 @@ Are you on the hunt for a pre-designed and highly customizable resume web page t
 
 This template is built with the power of Tailwind CSS and Material Tailwind, providing seamless customization to match your unique personal branding. The free resume template includes key features such as hero image, logo, features, and testimonial sections.
 
-**Documentation built by Developers**
-
-Each element is well presented in very complex documentation.
-
-You can read more about the [documentation here](https://www.material-tailwind.com/docs/react/installation).
-
 **HELPFUL LINKS**
 
-- View [Github Repository](https://github.com/creativetimofficial/nextjs-tailwind-resume-page)
-- Check [FAQ Page](https://www.creative-tim.com/faq)
 
-## [Demo](https://creative-tim.com/product/nextjs-tailwind-resume-page)
+## [Demo](http://localhost:3000/en)
 
-## Quick start
 
-Quick start options:
-
-- Download from [Creative Tim](https://www.creative-tim.com/product/nextjs-tailwind-resume-page?ref=readme-ntrp).
 
 ## Terminal Commands
 
@@ -46,49 +34,9 @@ At present, we officially aim to support the last two versions of the following 
 
 ## Resources
 
-- [Live Preview](https://demos.creative-tim.com/nextjs-tailwind-resume-page?ref=readme-ntrp)
-- [Download Page](https://www.creative-tim.com/product/nextjs-tailwind-resume-page?ref=readme-ntrp)
-- Documentation is [here](https://www.material-tailwind.com/docs/react/installation?ref=readme-ntrp)
-- [License Agreement](https://www.creative-tim.com/license?ref=readme-ntrp)
-- [Support](https://www.creative-tim.com/contact-us?ref=readme-ntrp)
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/nextjs-tailwind-resume-page/issues)
-- [Nepcha Analytics](https://nepcha.com?ref=readme) - Analytics tool for your website
-
-## Reporting Issues
-
-We use GitHub Issues as the official bug tracker for the Nextjs Tailwind Author Page. Here are some advices for our users that want to report an issue:
-
-1. Make sure that you are using the latest version of the Nextjs Tailwind Author Page. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/product/nextjs-tailwind-resume-page?ref=readme-ntrp).
-2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
-3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
+- [Live Preview](http://localhost:3000/en)
+-
 
 ## Technical Support or Questions
 
-If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us?ref=readme-ntrp) instead of opening an issue.
-
-## Licensing
-
-- Copyright 2023 [Creative Tim](https://www.creative-tim.com?ref=readme-ntrp)
-- Creative Tim [license](https://www.creative-tim.com/license?ref=readme-ntrp)
-
-## Useful Links
-
-- [More products](https://www.creative-tim.com/templates?ref=readme-ntrp) from Creative Tim
-
-- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
-
-- [Freebies](https://www.creative-tim.com/bootstrap-themes/free?ref=readme-ntrp) from Creative Tim
-
-- [Affiliate Program](https://www.creative-tim.com/affiliates/new?ref=readme-ntrp) (earn money)
-
-##### Social Media
-
-Twitter: <https://twitter.com/CreativeTim>
-
-Facebook: <https://www.facebook.com/CreativeTim>
-
-Dribbble: <https://dribbble.com/creativetim>
-
-Google+: <https://plus.google.com/+CreativetimPage>
-
-Instagram: <https://instagram.com/creativetimofficial>
+Instagram: <https://www.instagram.com/mr.hajizadeh_1376/>
