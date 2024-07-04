@@ -40,6 +40,11 @@ const Form = () => {
       },
       body: JSON.stringify(items),
     });
+    if(res.status === 422){
+      showSwal("لطفا تمام فیلد ها را  با دقت پر نمایید.", "warning", "فهمیدم");
+    } if(res.status === 400){
+      showSwal("لطفا آدرس ایمیل صحیح را وارد نمایید.", "warning", "فهمیدم");
+    }
     if (res.status === 201) {
       showSwal("در اسرع وقت با شما تماس خواهیم گرفت.", "success", "فهمیدم");
       setEmail("");
@@ -47,11 +52,7 @@ const Form = () => {
       setMessage("");
       setPhone("");
     }
-    if(res.status === 422){
-      showSwal("لطفا تمام فیلد ها را  با دقت پر نمایید.", "warning", "فهمیدم");
-    } if(res.status === 400){
-      showSwal("لطفا آدرس ایمیل صحیح را وارد نمایید.", "warning", "فهمیدم");
-    }
+   
 
   };
 
