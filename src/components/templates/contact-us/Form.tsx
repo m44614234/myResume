@@ -45,6 +45,9 @@ const Form = () => {
       setMessage("");
       setPhone("");
     }
+    if(res.status === 422){
+      showSwal("لطفا تمام فیلد ها را  با دقت پر نمایید.", "warning", "فهمیدم");
+    }
   };
 
   return (

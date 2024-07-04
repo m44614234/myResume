@@ -8,6 +8,10 @@ export async function POST(req: Request, res: Response) {
     const body = await req.json()
     const { email  , name, message, phone } = body;
 
+
+    if(phone && phone.length !== 11){
+      return Response.json({ message: "Phone number is not valid" }, { status: 422 });
+    }
   const contact =  await ContactModel.create({ email, name, message, phone });
 
     return Response.json({ message: " Created Successfully"  , data : contact}, { status: 201 });
