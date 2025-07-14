@@ -1,0 +1,33 @@
+.breadcrumb div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 6px;
+  padding-bottom: 3.8rem;
+}
+.active_step {
+  opacity: 1 !important;
+}
+.breadcrumb {
+  margin-bottom: 40px;
+  padding: 0 60px;
+  padding-top: 90px;
+}
+.breadcrumb div p,
+.breadcrumb div a {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.2;
+}
+.breadcrumb svg {
+  font-size: 1.2rem;
+  opacity: 0.7;
+}
+.title {
+  text-align: center;
+  font-size: 4.4rem;
+}

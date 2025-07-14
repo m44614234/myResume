@@ -1,0 +1,68 @@
+{
+  "Index": {
+    "title": "i'm Mohammad  Reza",
+    "desc": "Web Developer , Freelancer , BlockChain Developer",
+    "connect": "my Socials :" ,
+    "login" : "Log in" ,
+    "register" : "Sign Up"
+  },
+  "nav_item": {
+    "Home": "Home",
+    "About_Us": "About Us",
+    "Contact_Us": "Contact Us"
+  },
+  "login":{
+    "title" : "Sign in to your account" ,
+    "email" : "Email" ,
+    "password" : "Password",
+    "signin" : "Sign In",
+    "remember" : "Remember Me",  
+    "continue_with" : "Or continue with"
+},  
+  "register":{
+    "title" : "Sign up on our website" ,
+    "email" : "Email Address" ,
+    "password" : "Password",
+    "confirm" : "Confirm  Password",
+    "signup" : "Sign Up",
+    "accept" : "Accept our terms and privacy policy"
+  },
+  "education": {
+    "edu_cert": "Education & Certifications",
+    "experience": "Experience"
+  },
+  "experience": {
+    "company": "Keykavoose Zaman Company",
+    "position": "Web Developer",
+    "history": "2023 - Present"
+  },
+  "skills": {
+    "skill_title": "My Skills",
+    "skill_sub": "Check out my technical and soft skills."
+  },
+  "footer": {
+    "items": {
+      "Home": "Home",
+      "About_Us": "About Us",
+      "contact": "Contact Us"
+    },
+    "copyright": "Made with ❤️ by Mohammad Reza"
+  },
+  "About":{
+    "title":"About Me",
+    "desc" : "I am Mohammadreza Hajizadeh, 26 years old, with a background in web programming. During my professional life, I have been able to participate in many projects and gain valuable skills. This experience helped me gain a deeper understanding of the web domain and strengthen my communication, problem solving and analytical skills. Then in recent times, I have taken on broader responsibilities and been able to contribute to larger projects. This experience helped me develop my leadership and management skills , Currently, I am working as a web designer and programmer. In this role, valuable opportunities have been provided for me so that I can use my knowledge and experience and play a role in advancing the goals of the organization. In addition to professional activities, I am also interested in blockchain. I am always looking for new challenges and opportunities for growth and development. I hope to be able to work as a blockchain developer in the blockchain industry in the future and contribute to the development of this field. Please contact me if you have any questions or requests."
+  },
+  "Contact":{
+    "contact_form" : "Contact Form" ,
+    "send" : "Complete the form below to contact us" ,
+    "name" : "Name  , Family" ,
+    "email" : "Email" ,
+    "mobile" : "Mobile" ,
+    "message" : "Message",
+    "btn_send" : "Send Message" ,
+
+    "contact" : "Contact Us" ,
+    "contacts" : "Contacts info",
+    "msg" : "Contact the management through WhatsApp or Telegram : "
+  }
+}

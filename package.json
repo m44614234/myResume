@@ -1,0 +1,39 @@
+{
+  "name": "nextjs-tailwind-resume-page",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "http://localhost:3000/en",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@material-tailwind/react": "^2.1.2",
+    "@next/font": "^14.2.4",
+    "leaflet": "^1.9.4",
+    "mongoose": "^8.16.3",
+    "next": "^14.2.4",
+    "next-intl": "^3.15.0",
+    "next-themes": "^0.3.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-leaflet": "^4.2.1",
+    "react-toastify": "^11.0.5",
+    "sweetalert": "^2.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5"
+  }
+}
