@@ -37,7 +37,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-, "models/Contact.ts", "models/User.ts", "src/middleware.ts"  ],
+, "models/Contact.ts", "models/User.ts", "src/middleware.tsx"  ],
   "exclude": [
     "node_modules"
   ]

@@ -7,27 +7,26 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "example.com", // به جای **، دامنه خاصی را وارد کنید
+        hostname: "https://my-resume-eight-peach.vercel.app/" || "http://localhost:3000", // به جای **، دامنه خاصی را وارد کنید
       },
     ],
   },
   async headers() {
     return [
       {
-        // source: '/(.*)', // همه مسیرها
-        source: '/api/:path*', // فقط برای مسیرهای API
+        source: "/:path*", 
         headers: [
           {
-            key: 'Access-Control-Allow-Origin',
-            value: '*', // یا آدرس خاصی که می‌خواهید اجازه دهید
+            key: "Access-Control-Allow-Origin",
+            value: "https://my-resume-eight-peach.vercel.app/" || "http://localhost:3000",
           },
           {
-            key: 'Access-Control-Allow-Methods',
-            value: 'GET, POST, PUT, DELETE, OPTIONS',
+            key: "Access-Control-Allow-Methods",
+            value: "GET, POST, PUT, DELETE, OPTIONS",
           },
           {
-            key: 'Access-Control-Allow-Headers',
-            value: 'Content-Type, Authorization',
+            key: "Access-Control-Allow-Headers",
+            value: "Content-Type, Authorization",
           },
         ],
       },
@@ -35,6 +34,4 @@ const nextConfig = {
   },
 };
 
-module.exports = {crossOrigin: "anonymous" , ...withNextIntl(nextConfig)};
-// این کد برای پیکربندی Next.js با پشتیبانی از چند زبان و
-// تنظیم هدرهای CORS برای اجازه دسترسی به منابع از دامنه‌های مختلف است
+module.exports = withNextIntl(nextConfig);
