@@ -1,28 +1,60 @@
-import  createMiddleware  from 'next-intl/middleware';
-import { NextRequest, NextResponse } from 'next/server';
+import createMiddleware from "next-intl/middleware";
+import { NextRequest, NextResponse } from "next/server";
 
-// Create a middleware function to set CORS headers
-export async function corsMiddleware(req: NextRequest) {
+const corsMiddleware = async (req: NextRequest) => {
   const res = NextResponse.next();
 
   // تنظیم هدرهای CORS
-  res.headers.set('Access-Control-Allow-Origin', '*'); // یا آدرس خاصی که می‌خواهید اجازه دهید
-  res.headers.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-  res.headers.set('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  res.headers.set("Access-Control-Allow-Origin", "*"); // یا آدرس خاصی که می‌خواهید اجازه دهید
+  res.headers.set(
+    "Access-Control-Allow-Methods",
+    "GET, POST, PUT, DELETE, OPTIONS"
+  );
+  res.headers.set(
+    "Access-Control-Allow-Headers",
+    "Content-Type, Authorization"
+  );
 
   return res;
+};
+
+export default async function middleware(req: NextRequest) {
+  await corsMiddleware(req); // فراخوانی middleware CORS
+  return createMiddleware({
+    locales: ["en", "id"],
+    defaultLocale: "en",
+  })(req);
 }
 
-// Use the middleware function in your Next.js application
-export default createMiddleware({
-  // A list of all locales that are supported
-  locales: ['en', 'id'],
- 
-  // Used when no locale matches
-  defaultLocale: 'en',
-});
-
 export const config = {
-  // Match only internationalized pathnames
-  matcher: ['/', '/(id|en)/:path*']
+  matcher: ["/", "/(id|en)/:path*"],
 };
+
+// import createMiddleware from "next-intl/middleware";
+// import { NextRequest, NextResponse } from "next/server";
+
+// export async function corsMiddleware(req: NextRequest) {
+//   const res = NextResponse.next();
+
+//   res.headers.set("Access-Control-Allow-Origin", "*"); // یا آدرس خاصی که می‌خواهید اجازه دهید
+//   res.headers.set(
+//     "Access-Control-Allow-Methods",
+//     "GET, POST, PUT, DELETE, OPTIONS"
+//   );
+//   res.headers.set(
+//     "Access-Control-Allow-Headers",
+//     "Content-Type, Authorization"
+//   );
+
+//   return res;
+// }
+
+// export default createMiddleware({
+//   locales: ["en", "id"],
+
+//   defaultLocale: "en",
+// });
+
+// export const config = {
+//   matcher: ["/", "/(id|en)/:path*"],
+// };
