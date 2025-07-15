@@ -1,22 +1,8 @@
-import createMiddleware from 'next-intl/middleware';
+import  createMiddleware  from 'next-intl/middleware';
 import { NextRequest, NextResponse } from 'next/server';
 
-export default createMiddleware({
-  // A list of all locales that are supported
-  locales: ['en', 'id'],
- 
-  // Used when no locale matches
-  defaultLocale: 'en'
-});
-
-export const config = {
-  // Match only internationalized pathnames
-  matcher: ['/', '/(id|en)/:path*']
-  
-};
-
-export function middleware(req: NextRequest) {
-  
+// Create a middleware function to set CORS headers
+export async function corsMiddleware(req: NextRequest) {
   const res = NextResponse.next();
 
   // تنظیم هدرهای CORS
@@ -27,22 +13,16 @@ export function middleware(req: NextRequest) {
   return res;
 }
 
-
-// import createMiddleware from 'next-intl/middleware';
+// Use the middleware function in your Next.js application
+export default createMiddleware({
+  // A list of all locales that are supported
+  locales: ['en', 'id'],
  
-// export default createMiddleware({
-//   // A list of all locales that are supported
-//   locales: ['en', 'id'],
- 
-//   // Used when no locale matches
-//   defaultLocale: 'en'
-// });
- 
-// export const config = {
+  // Used when no locale matches
+  defaultLocale: 'en',
+});
 
-  
-//   // Match only internationalized pathnames
-//   matcher: ['/', '/(id|en)/:path*']
-
-   
-// };
+export const config = {
+  // Match only internationalized pathnames
+  matcher: ['/', '/(id|en)/:path*']
+};
