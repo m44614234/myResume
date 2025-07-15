@@ -14,7 +14,8 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: '/(.*)', // همه مسیرها
+        // source: '/(.*)', // همه مسیرها
+        source: '/api/:path*', // فقط برای مسیرهای API
         headers: [
           {
             key: 'Access-Control-Allow-Origin',
@@ -34,4 +35,6 @@ const nextConfig = {
   },
 };
 
-module.exports = withNextIntl(nextConfig);
+module.exports = {crossOrigin: "anonymous" , ...withNextIntl(nextConfig)};
+// این کد برای پیکربندی Next.js با پشتیبانی از چند زبان و
+// تنظیم هدرهای CORS برای اجازه دسترسی به منابع از دامنه‌های مختلف است
