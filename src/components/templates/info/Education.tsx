@@ -28,7 +28,7 @@ const Education = () => {
     } catch (error) {
       toast.error(
         `${
-          locale === "en" ? "Failed to load data." : "خطا در بارگذاری اطلاعات ."
+          locale === "en" ? "Failed to load data." : "خطا در بارگذاری اطلاعات "
         }`
       );
       setLoading(false);
