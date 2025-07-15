@@ -17,6 +17,8 @@ export async function POST(req: Request, res: Response) {
       faDesc,
     });
 
+    
+
     return Response.json(
       { message: "Created Successfully"},
       { status: 201 }
@@ -30,9 +32,11 @@ export async function POST(req: Request, res: Response) {
 export async function GET(req: Request, res: Response) {
   connect();
 
+
   try {
     const education = await Education.find();
     return Response.json({ data: education }, { status: 200 });
+    
   } catch (error) {
     console.log("Error =>", error);
     return Response.json({ message: "Error =>", error }, { status: 500 });

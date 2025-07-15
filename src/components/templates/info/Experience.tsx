@@ -22,10 +22,12 @@ const Experience = () => {
         },
       });
       const expData = await res.json();
+      console.log("expData =>", expData);
 
       setExpData(expData.data);
       setLoading(false);
     } catch (error) {
+      console.log("Error =>", error);
       toast.error(
         `${
           locale === "en" ? "Failed to load data." : "خطا در بارگذاری اطلاعات"

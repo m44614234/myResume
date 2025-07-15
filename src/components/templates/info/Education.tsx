@@ -25,6 +25,7 @@ const Education = () => {
 
       setEduData(eduData.data);
       setLoading(false);
+      console.log("eduData =>", eduData);
     } catch (error) {
       toast.error(
         `${
