@@ -35,16 +35,3 @@ const nextConfig = {
 };
 
 module.exports = withNextIntl(nextConfig);
-
-// const nextConfig = {
-//   images: {
-//     remotePatterns: [
-//       {
-//         protocol: "https",
-//         hostname: "**",
-//       },
-//     ],
-//   },
-// };
-
-// module.exports = withNextIntl(nextConfig);
